@@ -8,81 +8,93 @@
 <aside id="sidebar">
     <img id="avatar-image" src="cat.jpg" alt="avatar">
     <p id="avatar-label">Stepan Dementev</p>
-    <nav id="sidebar-anchors">
-        <a>About me</a>
-        <a>Skills</a>
-        <a>Projects</a>
-        <a>Contact with me</a>
+    <nav id="sidebar-nav">
+        <a href="#header">Top</a>
+        <a href="#about-me-part">About me</a>
+        <a href="#skills-part">Skills</a>
+        <a href="#projects-part">Projects</a>
+        <a href="#contact-with-me-part">Contact with me</a>
     </nav>
 
     <footer>
         Created at Innopolis University
     </footer>
 </aside>
-<main>
+<header class="structure-part" id="header">
     <h1>HI</h1>
     <h1>I AM STEPAN</h1>
     <h1>BACKEND DEVELOPER</h1>
     <p>Java Spring programmer, cats lover</p>
-
-
-    <h1>ABOUT ME</h1>
-    <p>
-        I'am Stepan Dementev, a Back-End Developer located in Innopolis, Russia.
-        I have a serious passion for creating and producing server web applications with pleasant and clear code style
-        and architecture.
-        I would like to switch to Kotlin, not afraid of new technologies to learn.
-        Well-organized person, ready to take responsibility and crucial roles.
-    </p>
-
-    <h1>SKILLS</h1>
-    <ol>
-        <li>Java</li>
-        <li>Spring, Spring Boot</li>
-        <li>PostgreSQL,Redis</li>
-        <li>Hibernate</li>
-        <li>Grafana</li>
-        <li>Docker</li>
-        <li>Kafka</li>
-        <li>Rest API</li>
-        <li>Git, GitHub</li>
-    </ol>
-
-    <h1>Projects</h1>
-    <ol>
-        <li>
-            <p>
-                <a href="https://github.com/ssspamqe/Link-Tracker"><b>Link-Tracker</b></a>
-                an application consisting of two services - Telegram bot and Scrapper
-                (an application that checks resource updates using links stored in PostgreSQL). The client
-                registers in Bot, sends links to the GitHub repository or a question on StackOverflow and
-                receives information about, for example, new answers to a question or a new commit directly in
-                the messenger. Communication between the services is implemented through the Rest API and Kafka. There
-                is coverage with both unit and integration tests.
-            </p>
-        </li>
-        <li>
-            <p>
-                <a href="https://github.com/ssspamqe/Fractal-Generator"><b>Fractal Generator</b></a>
-                an application written in pure Java language (using Lombok and
-                Junit5), which generates fractal images in the form of concrete files (.png, .jpg, .jpeg).
-                There is a coverage with unit tests. Learn more in README.md file (in Russian).
-            </p>
-        </li>
-    </ol>
-
-    <h1>Contact with me</h1>
-    <div id="contacts">
-        <a href="https://github.com/ssspamqe">
-            <img src="github_logo.png" alt="github logo"/>
-        </a>
-        <a href="https://t.me/dementevssstepan">
-            <img src="telegram_logo.png" alt="telegram logo"/>
-        </a>
-        <a href="mailto: dementevssstepan@gmail.com">
-            <img src="gmail_logo.png" alt="gmail logo"/>
-        </a>
+</header>
+<main>
+    <div class="structure-part" id="about-me-part">
+        <h1>ABOUT ME</h1>
+        <p>
+            I'am Stepan Dementev, a Back-End Developer located in Innopolis, Russia.
+            I have a serious passion for creating and producing server web applications with pleasant and clear code
+            style
+            and architecture.
+            I would like to switch to Kotlin, not afraid of new technologies to learn.
+            Well-organized person, ready to take responsibility and crucial roles.
+        </p>
     </div>
+
+    <div class="structure-part" id="skills-part">
+        <h1>SKILLS</h1>
+        <ol>
+            <li>Java</li>
+            <li>Spring, Spring Boot</li>
+            <li>PostgreSQL,Redis</li>
+            <li>Hibernate</li>
+            <li>Grafana</li>
+            <li>Docker</li>
+            <li>Kafka</li>
+            <li>Rest API</li>
+            <li>Git, GitHub</li>
+        </ol>
+    </div>
+
+    <div class="structure-part" id="projects-part">
+        <h1>Projects</h1>
+        <ol>
+            <li>
+                <p>
+                    <a href="https://github.com/ssspamqe/Link-Tracker"><b>Link-Tracker</b></a>
+                    an application consisting of two services - Telegram bot and Scrapper
+                    (an application that checks resource updates using links stored in PostgreSQL). The client
+                    registers in Bot, sends links to the GitHub repository or a question on StackOverflow and
+                    receives information about, for example, new answers to a question or a new commit directly in
+                    the messenger. Communication between the services is implemented through the Rest API and Kafka.
+                    There
+                    is coverage with both unit and integration tests.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="https://github.com/ssspamqe/Fractal-Generator"><b>Fractal Generator</b></a>
+                    an application written in pure Java language (using Lombok and
+                    Junit5), which generates fractal images in the form of concrete files (.png, .jpg, .jpeg).
+                    There is a coverage with unit tests. Learn more in README.md file (in Russian).
+                </p>
+            </li>
+        </ol>
+    </div>
+
+    <div class="structure-part" id="contact-with-me-part">
+        <h1>Contact with me</h1>
+        <div id="contacts">
+            <a href="https://github.com/ssspamqe">
+                <img src="github_logo.png" alt="github logo"/>
+            </a>
+            <a href="https://t.me/dementevssstepan">
+                <img src="telegram_logo.png" alt="telegram logo"/>
+            </a>
+            <a href="mailto: dementevssstepan@gmail.com">
+                <img src="gmail_logo.png" alt="gmail logo"/>
+            </a>
+        </div>
+    </div>
+
 </main>
 
 </body>

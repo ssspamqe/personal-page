@@ -2,7 +2,7 @@ body {
     font-family: "Roboto Light", sans-serif;
 }
 h1{
-    font-size: 400%;
+    font-size: 850%;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -26,10 +26,10 @@ h1{
 #sidebar > *{
     margin: 10%;
 }
-#sidebar-anchors{
+#sidebar-nav{
     margin-top: 30%;
 }
-#sidebar-anchors > a{
+#sidebar-nav > a{
     display: block;
     margin-bottom: 10px;
 }
@@ -55,3 +55,8 @@ h1{
 header, main{
     padding-left: 17%;
 }
+
+.structure-part{
+    padding-top: 12%;
+}
+
