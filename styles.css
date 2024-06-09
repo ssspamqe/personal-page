@@ -1,0 +1,57 @@
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+h1{
+    font-size: 400%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: #9538ee;
+    color: white;
+    text-align: center;
+}
+
+#sidebar > footer{
+    position: absolute;
+    bottom: 0;
+}
+
+#sidebar > *{
+    margin: 10%;
+}
+#sidebar-anchors{
+    margin-top: 30%;
+}
+#sidebar-anchors > a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#avatar-label{
+    margin-top: 0;
+}
+#avatar-image{
+    margin-bottom: 1%;
+}
+
+
+#avatar-image{
+    width: 80%;
+    border-radius: 50%;
+}
+
+#contacts  img{
+    height: 100px;
+    margin: 10px;
+}
+
+header, main{
+    padding-left: 17%;
+}
