@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Stepan Dementev</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <aside id="sidebar">
-    <img id="avatar-image" src="cat.jpg" alt="avatar">
+    <img id="avatar-image" src="resources/me.jpg" alt="avatar">
     <p id="avatar-label">Stepan Dementev</p>
     <nav id="sidebar-nav">
-        <a href="#header">Top</a>
+        <a href="#header-part">Top</a>
         <a href="#about-me-part">About me</a>
         <a href="#skills-part">Skills</a>
         <a href="#projects-part">Projects</a>
@@ -20,17 +20,21 @@
         Created at Innopolis University
     </footer>
 </aside>
-<header class="structure-part" id="header">
-    <h1>HI</h1>
-    <h1>I AM STEPAN</h1>
-    <h1>BACKEND DEVELOPER</h1>
-    <p>Java Spring programmer, cats lover</p>
+<header>
+    <div class="structure-part" id="header-part">
+        <h1>
+            HELLO!<br>
+            I AM STEPAN<br>
+            BACKEND DEVELOPER
+        </h1>
+        <p>Java Spring programmer, cats lover</p>
+    </div>
 </header>
 <main>
     <div class="structure-part" id="about-me-part">
         <h1>ABOUT ME</h1>
         <p>
-            I'am Stepan Dementev, a Back-End Developer located in Innopolis, Russia.
+            I'am Stepan Dementev, a Back-End Developer located at Innopolis, Russia.
             I have a serious passion for creating and producing server web applications with pleasant and clear code
             style
             and architecture.
@@ -41,22 +45,22 @@
 
     <div class="structure-part" id="skills-part">
         <h1>SKILLS</h1>
-        <ol>
-            <li>Java</li>
-            <li>Spring, Spring Boot</li>
-            <li>PostgreSQL,Redis</li>
-            <li>Hibernate</li>
-            <li>Grafana</li>
-            <li>Docker</li>
-            <li>Kafka</li>
-            <li>Rest API</li>
-            <li>Git, GitHub</li>
-        </ol>
+        <ul id="skill-list">
+            <li><p>Java</p></li>
+            <li><p>Spring</p></li>
+            <li><p>PostgreSQL,Redis</p></li>
+            <li><p>Hibernate</p></li>
+            <li><p>Grafana</p></li>
+            <li><p>Docker</p></li>
+            <li><p>Kafka</p></li>
+            <li><p>Rest API</p></li>
+            <li><p>Git, GitHub</p></li>
+        </ul>
     </div>
 
     <div class="structure-part" id="projects-part">
         <h1>Projects</h1>
-        <ol>
+        <ul>
             <li>
                 <p>
                     <a href="https://github.com/ssspamqe/Link-Tracker"><b>Link-Tracker</b></a>
@@ -77,20 +81,20 @@
                     There is a coverage with unit tests. Learn more in README.md file (in Russian).
                 </p>
             </li>
-        </ol>
+        </ul>
     </div>
 
     <div class="structure-part" id="contact-with-me-part">
         <h1>Contact with me</h1>
         <div id="contacts">
-            <a href="https://github.com/ssspamqe">
-                <img src="github_logo.png" alt="github logo"/>
+            <a href="https://github.com/ssspamqe" id="gh-link">
+                <img src="resources/github_logo.png" alt="github logo">
             </a>
-            <a href="https://t.me/dementevssstepan">
-                <img src="telegram_logo.png" alt="telegram logo"/>
+            <a href="https://t.me/dementevssstepan" id="tg-link">
+                <img src="resources/telegram_logo.png" alt="telegram logo">
             </a>
-            <a href="mailto: dementevssstepan@gmail.com">
-                <img src="gmail_logo.png" alt="gmail logo"/>
+            <a href="mailto:dementevssstepan@gmail.com" id="email">
+                <img src="resources/gmail_logo.png" alt="gmail logo">
             </a>
         </div>
     </div>
