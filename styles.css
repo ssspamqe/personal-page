@@ -83,7 +83,7 @@ header, main{
     padding-left: 17%;
 }
 
-.structure-part{
+.structure-part, #comic-card{
     /*padding-top: 12%;*/
     margin: 5%;
     margin-bottom: 20%;
