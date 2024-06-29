@@ -1,6 +1,6 @@
-const comicTitle = document.getElementById("comic-title")
-const comicImage = document.getElementById("comic-image")
-const comicDate = document.getElementById("upload-date")
+const comicTitle = document.getElementById("comic-title") as HTMLHeadingElement
+const comicImage = document.getElementById("comic-image") as HTMLImageElement
+const comicDate = document.getElementById("upload-date") as HTMLParagraphElement
 async function fetchData() {
     const numberUrl = new URL("https://fwd.innopolis.university/api/hw2")
     numberUrl.searchParams.append("email", "s.dementev@innopolis.university")
