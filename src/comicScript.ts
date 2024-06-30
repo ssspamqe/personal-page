@@ -16,7 +16,7 @@ async function fillComicData() {
     const dateLocale = date.toLocaleString()
     const relativeTime = buildRelativeTime(date)
 
-    comicDate.textContent = `Published: ${dateLocale} (${relativeTime}))`
+    comicDate.textContent = `Published: ${dateLocale} (${relativeTime})`
 }
 
 async function fetchComic(): Promise<Comic> {
