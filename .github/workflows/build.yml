@@ -3,11 +3,14 @@ on:
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build script
-
+    permissions:
+      packages: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
