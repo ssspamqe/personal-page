@@ -1,0 +1,117 @@
+*{
+  font-family: "Calibri";
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+    background-color: #E7AD99;
+}
+
+p{
+    font-size: 300%;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(128, 128, 128);
+}
+
+h1 {
+    font-size: 700%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #495867;
+    font-family: Ramona;
+    text-align: left;
+}
+#sidebar {
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: #ECC8AF;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#sidebar > footer{
+    position: absolute;
+    bottom: 0;
+}
+
+#sidebar > *{
+    margin: 10%;
+    color: #413934;
+}
+#sidebar-nav{
+    margin-top: 30%;
+}
+#sidebar-nav > a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 180%;
+}
+
+#avatar-label{
+    margin-top: 0;
+}
+#avatar-image{
+    margin-bottom: 1%;
+    width: 80%;
+    border-radius: 50%;
+    border-width: 10px;
+}
+
+#contacts  img{
+    height: 100px;
+    margin: 10px;
+}
+
+header, main{
+    padding-left: 17%;
+}
+
+.structure-part, #comic-card{
+    /*padding-top: 12%;*/
+    margin: 5%;
+    margin-bottom: 20%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
+    padding: 5%;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+#skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#skill-list li {
+    list-style-position: inside;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+
