@@ -8,7 +8,9 @@
     import ProjectsPart from "./lib/structure.parts/ProjectsPart.svelte";
     import ContactWithMePart from "./lib/structure.parts/ContactWithMePart.svelte";
 
-    import type {Anchor} from "./lib/ intefaces/BasicInterfaces.svelte";
+    import Comic from "./lib/structure.parts/Comic.svelte";
+
+    import type {Anchor} from "./lib/dto/Anchor";
 
     const sidebarAnchors: Anchor[] = buildSidebarAnchors();
 
@@ -33,8 +35,12 @@
             href: "#contact-with-me-part",
             textContent: "Contact with me"
         }
+        const comicAnchor: Anchor = {
+            href: "#comic-part",
+            textContent: "Comic"
+        }
 
-        return [headerAnchor, aboutMeAnchor, skillsAnchor, projectsAnchor, contactAnchor]
+        return [headerAnchor, aboutMeAnchor, skillsAnchor, projectsAnchor, contactAnchor, comicAnchor]
     }
 
 </script>
@@ -46,6 +52,7 @@
     <SkillsPart/>
     <ProjectsPart/>
     <ContactWithMePart/>
+    <Comic/>
 </main>
 
 
