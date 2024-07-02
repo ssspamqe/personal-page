@@ -1,6 +1,6 @@
 <script lang="ts">
     import avatar from '../assets/avatar.jpg'
-    import type {Anchor} from "./ intefaces/BasicInterfaces.svelte";
+    import type {Anchor} from "./dto/Anchor";
 
     export let anchors: Anchor[] = [];
 </script>
