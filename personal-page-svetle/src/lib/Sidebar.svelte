@@ -1,15 +1,18 @@
 <script lang="ts">
     import avatar from '../assets/avatar.jpg'
+    import type {Anchor} from "./ intefaces/BasicInterfaces.svelte";
 
-    export let arr: string[]; // array of strings
+    export let anchors: Anchor[] = [];
 </script>
 
 <aside id="sidebar">
-    <img id="avatar-image" src = {avatar} alt="avatar">
+    <img id="avatar-image" src={avatar} alt="avatar">
     <p id="avatar-label">Stepan Dementev</p>
-    {#each arr as item}
-        <p>{item}</p>
-    {/each}
+    <nav id="sidebar-nav">
+        {#each anchors as anchor}
+            <a href={anchor.href}>{anchor.textContent}</a>
+        {/each}
+    </nav>
     <footer>
         Created at Innopolis University
     </footer>
@@ -17,12 +20,12 @@
 
 
 <style>
-    *{
+    * {
         font-family: "Calibri";
     }
 
 
-    p{
+    p {
         font-size: 300%;
         text-align: center;
     }
@@ -42,21 +45,31 @@
         border-top-right-radius: 20px;
     }
 
-    #sidebar > footer{
+    #sidebar > footer {
         position: absolute;
         bottom: 0;
     }
 
-    #sidebar > *{
+    #sidebar > * {
         margin: 10%;
         color: #413934;
     }
 
-    #avatar-label{
+    #avatar-label {
         margin-top: 0;
     }
 
-    #avatar-image{
+    #sidebar-nav{
+        margin-top: 30%;
+    }
+    #sidebar-nav > a{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 180%;
+    }
+
+
+    #avatar-image {
         margin-bottom: 1%;
         width: 80%;
         border-radius: 50%;
