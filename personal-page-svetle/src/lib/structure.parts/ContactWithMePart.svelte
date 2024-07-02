@@ -1,14 +1,20 @@
+<script lang="ts">
+    import githubLogo from '../../assets/github_logo.png';
+    import telegramLogo from '../../assets/telegram_logo.png';
+    import gmailLogo from '../../assets/gmail_logo.png';
+</script>
+
 <div class="structure-part" id="contact-with-me-part">
     <h1>Contact with me</h1>
     <div id="contacts">
         <a href="https://github.com/ssspamqe" id="gh-link">
-            <img src="personal-page-svetle/src/assets/github_logo.png" alt="github logo">
+            <img src={githubLogo} alt="github logo">
         </a>
         <a href="https://t.me/dementevssstepan" id="tg-link">
-            <img src="personal-page-svetle/src/assets/telegram_logo.png" alt="telegram logo">
+            <img src= {telegramLogo} alt="telegram logo">
         </a>
         <a href="mailto:dementevssstepan@gmail.com" id="email">
-            <img src="personal-page-svetle/src/assets/gmail_logo.png" alt="gmail logo">
+            <img src={gmailLogo} alt="gmail logo">
         </a>
     </div>
 </div>
