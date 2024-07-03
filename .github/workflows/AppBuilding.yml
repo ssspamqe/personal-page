@@ -28,9 +28,15 @@ jobs:
       - name: List dist directory
         run: ls dist
 
+      - name: Compare dist and gh-pages branch
+        run: |
+          git fetch origin gh-pages
+          diff -r dist <(git show origin/gh-pages:dist)
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
