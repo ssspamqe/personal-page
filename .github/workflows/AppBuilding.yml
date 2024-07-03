@@ -5,14 +5,11 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -34,6 +31,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
+          branch: gh-pages
           folder: dist
-          branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
