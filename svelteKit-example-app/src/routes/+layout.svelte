@@ -1,53 +1,82 @@
-<script>
-	import Header from './Header.svelte';
-	import './styles.css';
+<script lang="ts">
+	 import avatar from '../lib/images/avatar.jpg'
+	// import type {Anchor} from "./dto/Anchor";
+
+	// export let anchors: Anchor[] = [];
 </script>
 
-<div class="app">
-	<Header />
-
-	<main>
-		<slot />
-	</main>
-
+<aside id="sidebar">
+	<img id="avatar-image" src={avatar} alt="avatar">
+	<p id="avatar-label">Stepan Dementev</p>
+	<nav id="sidebar-nav">
+		<a href=".">Hello!</a>
+		<a href="./about">About Me</a>
+		<a href="./skills">Skills</a>
+		<a href="./projects">Projects</a>
+		<a href="./contact">Contact with me</a>
+		<a href="./comic">Comic</a>
+	</nav>
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		Created at Innopolis University
 	</footer>
-</div>
+</aside>
+
+<slot/>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+	* {
+		font-family: "Calibri";
 	}
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+
+	p {
+		font-size: 300%;
+		text-align: center;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+	#sidebar {
+		width: 15%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		float: left;
+		background-color: #ECC8AF;
+		color: white;
+		text-align: center;
+		box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 20px;
 	}
 
-	footer a {
-		font-weight: bold;
+	#sidebar > footer {
+		position: absolute;
+		bottom: 0;
 	}
 
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	#sidebar > * {
+		margin: 10%;
+		color: #413934;
+	}
+
+	#avatar-label {
+		margin-top: 0;
+	}
+
+	#sidebar-nav{
+		margin-top: 30%;
+	}
+	#sidebar-nav > a{
+		display: block;
+		margin-bottom: 10px;
+		font-size: 180%;
+	}
+
+
+	#avatar-image {
+		margin-bottom: 1%;
+		width: 80%;
+		border-radius: 50%;
+		border-width: 10px;
 	}
 </style>
