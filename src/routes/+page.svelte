@@ -1,5 +1,6 @@
 <script>
 	import './styles.css'
+	export const prerender = true;
 </script>
 <header>
 	<div class="structure-part" id="header-part">
