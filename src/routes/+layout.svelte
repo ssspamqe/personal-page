@@ -1,29 +1,39 @@
 <script lang="ts">
-    import avatar from '../assets/avatar.jpg'
-    import type {Anchor} from "./dto/Anchor";
+    import avatar from "../lib/images/avatar.jpg"
 
-    export let anchors: Anchor[] = [];
+    export const prerender = true
+
 </script>
 
 <aside id="sidebar">
-    <img id="avatar-image" src={avatar} alt="avatar">
-    <p id="avatar-label">Stepan Dementev</p>
-    <nav id="sidebar-nav">
-        {#each anchors as anchor}
-            <a href={anchor.href}>{anchor.textContent}</a>
-        {/each}
-    </nav>
+    <header>
+        <img id="avatar-image" src={avatar} alt="avatar">
+        <p id="avatar-label">Stepan Dementev</p>
+        <nav id="sidebar-nav">
+            <a href=".">Hello!</a>
+            <a href="./about">About Me</a>
+            <a href="./skills">Skills</a>
+            <a href="./projects">Projects</a>
+            <a href="./contact">Contact with me</a>
+            <a href="./comic">Comic</a>
+        </nav>
+    </header>
+
     <footer>
         Created at Innopolis University
     </footer>
 </aside>
 
+<slot />
 
 <style>
     * {
         font-family: "Calibri";
     }
 
+    header {
+        padding: 0;
+    }
 
     p {
         font-size: 300%;
@@ -59,10 +69,11 @@
         margin-top: 0;
     }
 
-    #sidebar-nav{
+    #sidebar-nav {
         margin-top: 30%;
     }
-    #sidebar-nav > a{
+
+    #sidebar-nav > a {
         display: block;
         margin-bottom: 10px;
         font-size: 180%;
