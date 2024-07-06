@@ -1,5 +1,5 @@
 <script lang="ts">
-    import avatar from "../lib/images/avatar.jpg"
+    import avatar from "./avatar.jpg"
 
     export const prerender = true
 
@@ -7,7 +7,8 @@
 
 <aside id="sidebar">
     <header>
-        <img id="avatar-image" src={avatar} alt="avatar">
+<!--        my avatar cant be loaded idk why :`(-->
+<!--        <img id="avatar-image" src={avatar} alt="avatar">-->
         <p id="avatar-label">Stepan Dementev</p>
         <nav id="sidebar-nav">
             <a href=".">Hello!</a>
