@@ -1,11 +1,10 @@
-
 * {
-    font-family: "Calibri";
+    font-family: 'Calibri';
 }
 
 body {
-    font-family: "Roboto Light", sans-serif;
-    background-color: #E7AD99;
+    font-family: 'Roboto Light', sans-serif;
+    background-color: #e7ad99;
 }
 
 p {
@@ -40,7 +39,8 @@ h1 {
     margin: 10px;
 }
 
-header, main {
+header,
+main {
     padding-left: 17%;
 }
 
@@ -53,7 +53,6 @@ header, main {
     border-radius: 20px;
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
     padding: 5%;
-
 }
 
 ul {
@@ -72,7 +71,8 @@ ul {
     padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0;
     margin-left: 0;
 }

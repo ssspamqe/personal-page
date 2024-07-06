@@ -1,6 +1,6 @@
-import { json } from "@sveltejs/kit"
-import { formatDistanceToNow } from "date-fns"
-import type { Comic } from "./Comic"
+import { json } from '@sveltejs/kit'
+import { formatDistanceToNow } from 'date-fns'
+import type { Comic } from './Comic'
 
 export async function GET() {
     let comic: Comic = await getComic()
@@ -9,10 +9,10 @@ export async function GET() {
 
 async function getComic(): Promise<Comic> {
     let comic: Comic = {
-        title: "",
-        imageSrc: "",
-        alt: "",
-        date: "",
+        title: '',
+        imageSrc: '',
+        alt: '',
+        date: '',
     }
 
     let rawComic = await fetchComic()
@@ -31,14 +31,14 @@ async function getComic(): Promise<Comic> {
 }
 
 async function fetchComic(): Promise<RawComic> {
-    const numberUrl = new URL("https://fwd.innopolis.university/api/hw2")
-    numberUrl.searchParams.append("email", "s.dementev@innopolis.university")
-    const number = await fetch(numberUrl).then(response => response.json())
+    const numberUrl = new URL('https://fwd.innopolis.university/api/hw2')
+    numberUrl.searchParams.append('email', 's.dementev@innopolis.university')
+    const number = await fetch(numberUrl).then((response) => response.json())
     console.log(number)
 
-    const comicUrl = new URL("https://fwd.innopolis.university/api/comic")
-    comicUrl.searchParams.append("id", number)
-    return await fetch(comicUrl).then(response => response.json())
+    const comicUrl = new URL('https://fwd.innopolis.university/api/comic')
+    comicUrl.searchParams.append('id', number)
+    return await fetch(comicUrl).then((response) => response.json())
 }
 
 function buildRelativeTime(date: Date): string {
@@ -51,10 +51,10 @@ function buildDayJsString(date: Date): string {
 }
 
 interface RawComic {
-    safe_title: string,
-    img: string,
-    alt: string,
-    year: number,
-    month: number,
+    safe_title: string
+    img: string
+    alt: string
+    year: number
+    month: number
     day: number
 }
