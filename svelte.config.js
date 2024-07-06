@@ -1,5 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-static'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
 const config = {
     preprocess: vitePreprocess(),
@@ -7,12 +7,14 @@ const config = {
         adapter: adapter({
             pages: 'build',
             fallback: '404.html',
-            strict: true
+            strict: true,
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : '/personal-page.github.io'
-        }
-    }
-};
+            base: process.argv.includes('dev')
+                ? ''
+                : '/personal-page.github.io',
+        },
+    },
+}
 
-export default config;
+export default config
