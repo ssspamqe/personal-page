@@ -1,7 +1,7 @@
 <script lang="ts">
-    import avatar from '../lib/images/avatar.jpg'
+    import avatar from "../lib/images/avatar.jpg"
 
-    export const prerender = true;
+    export const prerender = true
 
 </script>
 
@@ -24,14 +24,14 @@
     </footer>
 </aside>
 
-<slot/>
+<slot />
 
 <style>
     * {
         font-family: "Calibri";
     }
 
-    header{
+    header {
         padding: 0;
     }
 

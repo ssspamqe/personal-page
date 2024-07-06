@@ -1,6 +1,6 @@
-import {json} from '@sveltejs/kit';
-import {formatDistanceToNow} from 'date-fns';
-import type {Comic} from './Comic'
+import { json } from "@sveltejs/kit"
+import { formatDistanceToNow } from "date-fns"
+import type { Comic } from "./Comic"
 
 export async function GET() {
     let comic: Comic = await getComic()
@@ -12,22 +12,22 @@ async function getComic(): Promise<Comic> {
         title: "",
         imageSrc: "",
         alt: "",
-        date: ""
+        date: "",
     }
 
-    let rawComic = await fetchComic();
+    let rawComic = await fetchComic()
 
-    comic.title = rawComic.safe_title;
-    comic.imageSrc = rawComic.img;
-    comic.alt = rawComic.alt;
+    comic.title = rawComic.safe_title
+    comic.imageSrc = rawComic.img
+    comic.alt = rawComic.alt
 
     const date = new Date(rawComic.year, rawComic.month, rawComic.day)
     const dateLocale = date.toLocaleString()
     const relativeTime = buildRelativeTime(date)
 
-    comic.date = `Published: ${dateLocale} (${relativeTime})`;
+    comic.date = `Published: ${dateLocale} (${relativeTime})`
 
-    return comic;
+    return comic
 }
 
 async function fetchComic(): Promise<RawComic> {
@@ -43,7 +43,7 @@ async function fetchComic(): Promise<RawComic> {
 
 function buildRelativeTime(date: Date): string {
     const dayJsString = buildDayJsString(date)
-    return formatDistanceToNow(dayJsString, {addSuffix: true});
+    return formatDistanceToNow(dayJsString, { addSuffix: true })
 }
 
 function buildDayJsString(date: Date): string {

@@ -1,6 +1,7 @@
 <script lang="ts">
-    import '../styles.css'
-    import type {Comic} from '../api/comic/Comic'
+    import "../styles.css"
+    import type { Comic } from "../api/comic/Comic"
+
     export const prerender = true
     export let data: Comic
 </script>

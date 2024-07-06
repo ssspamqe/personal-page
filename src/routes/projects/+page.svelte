@@ -1,6 +1,7 @@
 <script>
-    import '../styles.css'
-    export const prerender = true;
+    import "../styles.css"
+
+    export const prerender = true
 
 </script>
 
