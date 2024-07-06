@@ -1,4 +1,4 @@
-import{s,n as r}from"../chunks/scheduler.Cewbzyqj.js";import{S as o,i as c,e as p,c as l,g as m,a as u,d as h}from"../chunks/index.DeFMAK_U.js";/* empty css                       */function d(a){let e,n=`<div class="structure-part" id="projects-part"><h1>Projects</h1> <ul><li><p><a href="https://github.com/ssspamqe/Link-Tracker"><b>Link-Tracker</b></a>
+import{s,n as r}from"../chunks/scheduler.W2pu3yam.js";import{S as o,i as c,e as p,c as l,g as m,a as u,d as h}from"../chunks/index.BeC_g9jV.js";/* empty css                       */function d(a){let e,n=`<div class="structure-part" id="projects-part"><h1>Projects</h1> <ul><li><p><a href="https://github.com/ssspamqe/Link-Tracker"><b>Link-Tracker</b></a>
                     an application consisting of two services - Telegram bot and Scrapper
                     (an application that checks resource updates using links stored in PostgreSQL). The client
                     registers in Bot, sends links to the GitHub repository or a question on StackOverflow and
