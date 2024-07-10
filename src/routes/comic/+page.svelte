@@ -2,8 +2,6 @@
     import { formatDistanceToNow } from "date-fns"
     import { onMount } from "svelte"
 
-    export const prerender = true
-
     let comic: Comic = {
         title: "",
         imageSrc: "",

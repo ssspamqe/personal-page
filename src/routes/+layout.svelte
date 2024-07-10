@@ -1,8 +1,5 @@
 <script lang="ts">
     import avatar from "./avatar.jpg"
-
-    export const prerender = true
-
 </script>
 
 <aside id="sidebar">
