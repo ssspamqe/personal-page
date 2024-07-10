@@ -10,7 +10,7 @@
 <aside id="sidebar">
     <header>
 <!--        my avatar cant be loaded idk why :`(-->
-<!--        <img id="avatar-image" src={avatar} alt="avatar">-->
+        <img id="avatar-image" src={avatar} alt="avatar">
         <p id="avatar-label">Stepan Dementev</p>
         <nav id="sidebar-nav">
             <a href=".">Hello!</a>
