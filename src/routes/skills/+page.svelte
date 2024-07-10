@@ -1,8 +1,10 @@
 <script>
     import "../styles.css"
-
-    export const prerender = true
 </script>
+
+<head>
+    <meta name = "description" content = "Stepan Dementev is familiar with Java, Spring, PostreSQL, Redis, Hibernate, Grafana, Docker, Kafka, RestAPI, Git">
+</head>
 
 <main>
     <div class="structure-part" id="skills-part">

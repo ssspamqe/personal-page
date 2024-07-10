@@ -1,9 +1,10 @@
 <script>
     import "../styles.css"
-
-    export const prerender = true
-
 </script>
+
+<head>
+    <meta name = "description" content = "Stepan Dementev presents two projects: Link Tracker, and Fractal Generator">
+</head>
 
 <main>
     <div class="structure-part" id="projects-part">

@@ -1,13 +1,14 @@
 <script lang="ts">
     import "../styles.css"
 
-    export const prerender = true
-
-
     import githubLogo from "../../lib/images/github_logo.png"
     import telegramLogo from "../../lib/images/telegram_logo.png"
     import gmailLogo from "../../lib/images/gmail_logo.png"
 </script>
+
+<head>
+    <meta name = "description" content = "You can contact with Stepan Dementev via github, telegram, email">
+</head>
 
 <main>
     <div class="structure-part" id="contact-with-me-part">
