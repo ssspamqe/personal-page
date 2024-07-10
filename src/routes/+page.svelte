@@ -1,6 +1,11 @@
 <script>
     import "./styles.css"
 </script>
+
+<head>
+    <meta name = "description" content = "Stepan Dementev is Backend Developer">
+</head>
+
 <header>
     <div class="structure-part" id="header-part">
         <h1>

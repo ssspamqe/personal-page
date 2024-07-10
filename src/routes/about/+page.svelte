@@ -1,7 +1,9 @@
 <script>
     import "../styles.css"
 </script>
-
+<head>
+    <meta name = "description" content = "About Stepan Dementev">
+</head>
 <main>
     <div class="structure-part" id="about-me-part">
         <h1>ABOUT ME</h1>

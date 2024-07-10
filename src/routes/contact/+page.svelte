@@ -6,6 +6,10 @@
     import gmailLogo from "../../lib/images/gmail_logo.png"
 </script>
 
+<head>
+    <meta name = "description" content = "You can contact with Stepan Dementev via github, telegram, email">
+</head>
+
 <main>
     <div class="structure-part" id="contact-with-me-part">
         <h1>Contact with me</h1>

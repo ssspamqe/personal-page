@@ -2,6 +2,10 @@
     export let data: Comic;
 </script>
 
+<head>
+    <meta name = "description" content = "Stepan Dementev's comic is Innopolis fwd course's API">
+</head>
+
 <main>
     <div id="comic-part" class="structure-part">
         <h1 id="comic-title">{data.title}</h1>

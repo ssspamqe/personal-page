@@ -2,6 +2,10 @@
     import "../styles.css"
 </script>
 
+<head>
+    <meta name = "description" content = "Stepan Dementev presents two projects: Link Tracker, and Fractal Generator">
+</head>
+
 <main>
     <div class="structure-part" id="projects-part">
         <h1>Projects</h1>

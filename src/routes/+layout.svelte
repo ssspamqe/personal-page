@@ -2,6 +2,11 @@
     import avatar from "./avatar.jpg"
 </script>
 
+<head>
+    <title>Stepan Dementev</title>
+    <meta name="author" content="Stepan Dementev" />
+</head>
+
 <aside id="sidebar">
     <header>
 <!--        my avatar cant be loaded idk why :`(-->

@@ -27,6 +27,7 @@
     "dependencies": {
         "@sveltejs/adapter-cloudflare": "^4.6.1",
         "@sveltejs/adapter-node": "5.0.2",
+        "create-cloudflare": "^2.22.0",
         "date-fns": "^3.6.0",
         "eslint": "^9.6.0"
     }

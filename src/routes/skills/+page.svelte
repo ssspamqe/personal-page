@@ -2,6 +2,10 @@
     import "../styles.css"
 </script>
 
+<head>
+    <meta name = "description" content = "Stepan Dementev is familiar with Java, Spring, PostreSQL, Redis, Hibernate, Grafana, Docker, Kafka, RestAPI, Git">
+</head>
+
 <main>
     <div class="structure-part" id="skills-part">
         <h1>SKILLS</h1>
